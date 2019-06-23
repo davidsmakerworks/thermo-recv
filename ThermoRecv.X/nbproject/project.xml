@@ -15,6 +15,7 @@
             <sourceRootList>
                 <sourceRootElem>.</sourceRootElem>
                 <sourceRootElem>../drivers/nRF24L01P</sourceRootElem>
+                <sourceRootElem>../../drivers/nrf24L01P</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

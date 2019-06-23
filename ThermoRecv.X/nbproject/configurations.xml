@@ -5,7 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>nRF24L01P-cfg.h</itemPath>
-      <itemPath>../drivers/nRF24L01P/nRF24L01P.h</itemPath>
+      <itemPath>../../drivers/nrf24L01P/nRF24L01P.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -15,7 +15,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>main.c</itemPath>
-      <itemPath>../drivers/nRF24L01P/nRF24L01P.c</itemPath>
+      <itemPath>../../drivers/nrf24L01P/nRF24L01P.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -26,6 +26,7 @@
   <sourceRootList>
     <Elem>.</Elem>
     <Elem>../drivers/nRF24L01P</Elem>
+    <Elem>../../drivers/nrf24L01P</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -75,7 +76,7 @@
         <property key="define-macros"
                   value="_XTAL_FREQ=32000000;RF_CHANNEL=0x08U;MAX_LED_INDEX=31;LED_BRIGHTNESS=0x7F;WS2812B"/>
         <property key="disable-optimizations" value="true"/>
-        <property key="extra-include-directories" value=".;..\drivers\nRF24L01P"/>
+        <property key="extra-include-directories" value=".;..\..\drivers\nRF24L01P"/>
         <property key="favor-optimization-for" value="-speed,+space"/>
         <property key="garbage-collect-data" value="true"/>
         <property key="garbage-collect-functions" value="true"/>
