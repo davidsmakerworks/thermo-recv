@@ -92,6 +92,7 @@
 #include <stdbool.h>
 
 #include "nRF24L01P.h"
+#include "nRF24L01P-cfg.h"
 
 #ifndef RF_CHANNEL
 #error RF_CHANNEL must be defined
@@ -404,7 +405,7 @@ void main(void) {
     init_mssp();
     init_rf();
     
-    NRF24_CE = 1;
+    NRF24_CE_ACTIVE();
     
     all_off();
     update_needed = true;
