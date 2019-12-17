@@ -70,6 +70,7 @@ OBJECTFILES=${OBJECTDIR}/main.p1 ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1
 SOURCEFILES=main.c ../../drivers/nrf24L01P/nRF24L01P.c
 
 
+
 CFLAGS=
 ASFLAGS=
 LDLIBSOPTIONS=
@@ -97,7 +98,7 @@ ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.p1.d 
 	@${RM} ${OBJECTDIR}/main.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -D_XTAL_FREQ=32000000 -DRF_CHANNEL=0x08U -DMAX_LED_INDEX=31 -DLED_BRIGHTNESS=0x7F -DWS2812B -xassembler-with-cpp -I"." -I"../../drivers/nRF24L01P" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/main.p1 main.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -D_XTAL_FREQ=32000000 -DRF_CHANNEL=0x08U -DMAX_LED_INDEX=31 -DLED_BRIGHTNESS=0x7F -DWS2812B -xassembler-with-cpp -I"." -I"../../drivers/nRF24L01P" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/main.p1 main.c 
 	@-${MV} ${OBJECTDIR}/main.d ${OBJECTDIR}/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -105,7 +106,7 @@ ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1: ../../drivers/nrf24L01P/nRF24L01P.c  n
 	@${MKDIR} "${OBJECTDIR}/_ext/248165411" 
 	@${RM} ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -D_XTAL_FREQ=32000000 -DRF_CHANNEL=0x08U -DMAX_LED_INDEX=31 -DLED_BRIGHTNESS=0x7F -DWS2812B -xassembler-with-cpp -I"." -I"../../drivers/nRF24L01P" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1 ../../drivers/nrf24L01P/nRF24L01P.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -D_XTAL_FREQ=32000000 -DRF_CHANNEL=0x08U -DMAX_LED_INDEX=31 -DLED_BRIGHTNESS=0x7F -DWS2812B -xassembler-with-cpp -I"." -I"../../drivers/nRF24L01P" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1 ../../drivers/nrf24L01P/nRF24L01P.c 
 	@-${MV} ${OBJECTDIR}/_ext/248165411/nRF24L01P.d ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -114,7 +115,7 @@ ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.p1.d 
 	@${RM} ${OBJECTDIR}/main.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -D_XTAL_FREQ=32000000 -DRF_CHANNEL=0x08U -DMAX_LED_INDEX=31 -DLED_BRIGHTNESS=0x7F -DWS2812B -xassembler-with-cpp -I"." -I"../../drivers/nRF24L01P" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/main.p1 main.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -D_XTAL_FREQ=32000000 -DRF_CHANNEL=0x08U -DMAX_LED_INDEX=31 -DLED_BRIGHTNESS=0x7F -DWS2812B -xassembler-with-cpp -I"." -I"../../drivers/nRF24L01P" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/main.p1 main.c 
 	@-${MV} ${OBJECTDIR}/main.d ${OBJECTDIR}/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -122,7 +123,7 @@ ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1: ../../drivers/nrf24L01P/nRF24L01P.c  n
 	@${MKDIR} "${OBJECTDIR}/_ext/248165411" 
 	@${RM} ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -D_XTAL_FREQ=32000000 -DRF_CHANNEL=0x08U -DMAX_LED_INDEX=31 -DLED_BRIGHTNESS=0x7F -DWS2812B -xassembler-with-cpp -I"." -I"../../drivers/nRF24L01P" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1 ../../drivers/nrf24L01P/nRF24L01P.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -D_XTAL_FREQ=32000000 -DRF_CHANNEL=0x08U -DMAX_LED_INDEX=31 -DLED_BRIGHTNESS=0x7F -DWS2812B -xassembler-with-cpp -I"." -I"../../drivers/nRF24L01P" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1 ../../drivers/nrf24L01P/nRF24L01P.c 
 	@-${MV} ${OBJECTDIR}/_ext/248165411/nRF24L01P.d ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/248165411/nRF24L01P.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -145,13 +146,13 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 dist/${CND_CONF}/${IMAGE_TYPE}/ThermoRecv.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=dist/${CND_CONF}/${IMAGE_TYPE}/ThermoRecv.X.${IMAGE_TYPE}.map  -D__DEBUG=1  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -D_XTAL_FREQ=32000000 -DRF_CHANNEL=0x08U -DMAX_LED_INDEX=31 -DLED_BRIGHTNESS=0x7F -DWS2812B -xassembler-with-cpp -I"." -I"../../drivers/nRF24L01P" -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -std=c99 -gdwarf-3 -mstack=compiled:auto:auto        $(COMPARISON_BUILD) -Wl,--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml -o dist/${CND_CONF}/${IMAGE_TYPE}/ThermoRecv.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
+	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=dist/${CND_CONF}/${IMAGE_TYPE}/ThermoRecv.X.${IMAGE_TYPE}.map  -D__DEBUG=1  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1    -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -D_XTAL_FREQ=32000000 -DRF_CHANNEL=0x08U -DMAX_LED_INDEX=31 -DLED_BRIGHTNESS=0x7F -DWS2812B -xassembler-with-cpp -I"." -I"../../drivers/nRF24L01P" -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -std=c99 -gdwarf-3 -mstack=compiled:auto:auto        $(COMPARISON_BUILD) -Wl,--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml -o dist/${CND_CONF}/${IMAGE_TYPE}/ThermoRecv.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 	@${RM} dist/${CND_CONF}/${IMAGE_TYPE}/ThermoRecv.X.${IMAGE_TYPE}.hex 
 	
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/ThermoRecv.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=dist/${CND_CONF}/${IMAGE_TYPE}/ThermoRecv.X.${IMAGE_TYPE}.map  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -D_XTAL_FREQ=32000000 -DRF_CHANNEL=0x08U -DMAX_LED_INDEX=31 -DLED_BRIGHTNESS=0x7F -DWS2812B -xassembler-with-cpp -I"." -I"../../drivers/nRF24L01P" -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     $(COMPARISON_BUILD) -Wl,--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml -o dist/${CND_CONF}/${IMAGE_TYPE}/ThermoRecv.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
+	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=dist/${CND_CONF}/${IMAGE_TYPE}/ThermoRecv.X.${IMAGE_TYPE}.map  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1    -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -D_XTAL_FREQ=32000000 -DRF_CHANNEL=0x08U -DMAX_LED_INDEX=31 -DLED_BRIGHTNESS=0x7F -DWS2812B -xassembler-with-cpp -I"." -I"../../drivers/nRF24L01P" -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     $(COMPARISON_BUILD) -Wl,--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml -o dist/${CND_CONF}/${IMAGE_TYPE}/ThermoRecv.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 	
 endif
 
@@ -167,3 +168,11 @@ endif
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r build/default
 	${RM} -r dist/default
+
+# Enable dependency checking
+.dep.inc: .depcheck-impl
+
+DEPFILES=$(shell mplabwildcard ${POSSIBLE_DEPFILES})
+ifneq (${DEPFILES},)
+include ${DEPFILES}
+endif
