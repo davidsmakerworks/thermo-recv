@@ -1,4 +1,8 @@
+# MPLAB X Files
 build
 debug
 dist
 private
+.generated_files
+Makefile-*
+Package-*
